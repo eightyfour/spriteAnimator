@@ -1,12 +1,12 @@
 spriteAnimator
 ==============
 
-TODO: remove Jquery from script. 
+Simple js which animates some graphics on a sprite
 
 ``` html 
 
   <style type="text/css"> 
-        #animatorDiv{ 
+        #animatorDiv { 
             background: url('useYourOwnSprite.png');  
         } 
     </style>
@@ -17,9 +17,11 @@ TODO: remove Jquery from script.
   <script src="positionJSONExample.js"></script>
   
   <script>
-   var animateSprite = new Animator(positionJSONExample);
-            ladyBugSmall.run( $('#animatorDiv'),['blink','blinkAndWatch','jump','win'],function(){
-                console.log('success animation');
-            } );
+      var animateSprite = new Animator(positionJSONExample);
+      animateSprite.run( $('#animatorDiv'),['blink','blinkAndWatch','jump','win'],function(){
+          console.log('success animation');
+      } );
   </script>
 ```
+
+TODO: remove jQuery 
